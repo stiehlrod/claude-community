@@ -6,9 +6,11 @@ A collection of helpful Claude Code slash commands for everyday tasks. No coding
 
 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) is an AI assistant that runs in your terminal. Slash commands are shortcuts that give Claude specific instructions for common tasks—like having a personal assistant who already knows exactly what you need.
 
-## Getting Claude Code
+## Getting Started
 
 **Note: Claude Code requires a paid subscription.** It does not work with the free tier.
+
+Follow these steps in order to get set up.
 
 ### Step 1: Get a Claude subscription
 
@@ -17,39 +19,7 @@ Sign up for one of these plans at [claude.ai](https://claude.ai):
 - **Claude Team** ($25/user/month) - For teams
 - **Claude Enterprise** - For organizations
 
-### Step 2: Install Claude Code
-
-Once subscribed, open Terminal and run:
-
-```bash
-npm install -g @anthropic-ai/claude-code
-```
-
-(Don't have npm? Install [Node.js](https://nodejs.org/) first—download the LTS version.)
-
-### Step 3: Start Claude Code
-
-```bash
-claude
-```
-
-You'll be prompted to log in with your Claude account on first run.
-
-## Available Commands
-
-| Command | Description |
-|---------|-------------|
-| `/contract-analyzer-bot` | Analyze contracts for dangerous, invasive, and unreasonable clauses |
-| `/discount-finder` | Find coupons, promo codes, cashback, and savings strategies |
-| `/hike-finder` | Find hikes with optimal conditions based on weather and preferences |
-| `/pack-trip` | Generate a packing list based on destination, weather, and activities |
-| `/product-finder` | Find best products by price, quality, reviews, and BBB ratings |
-| `/research` | Evaluate research quality by sample size, controls, peer review, and citations |
-| `/spotify-organizer-bot` | Organize Spotify library into mood-based and smart playlists |
-
-## Installation
-
-### New to Terminal? Start here
+### Step 2: Open Terminal
 
 Terminal is an app on your Mac that lets you type commands.
 
@@ -59,32 +29,59 @@ Terminal is an app on your Mac that lets you type commands.
 
 A window will open. This is your terminal—you'll paste the commands below here.
 
-### Step 1: Create a folder for the download
+### Step 3: Install Node.js
+
+Node.js is required to run Claude Code. Download and install it from [nodejs.org](https://nodejs.org/)—choose the **LTS** (Long Term Support) version.
+
+Run the installer and follow the prompts. When it's done, verify it worked by typing this in Terminal:
+
+```bash
+node --version
+```
+
+You should see a version number like `v20.x.x`. If you see an error, restart Terminal and try again.
+
+### Step 4: Install Claude Code
+
+Now install Claude Code by typing this in Terminal:
+
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+
+Wait for it to finish (may take a minute).
+
+### Step 5: Download these commands
+
+Create a folder and download this repository:
 
 ```bash
 mkdir -p ~/Github
 cd ~/Github
-```
-
-### Step 2: Download these commands
-
-```bash
 git clone https://github.com/stiehlrod/claude-community.git
 ```
 
-### Step 3: Copy commands to your Claude config
+### Step 6: Copy commands to your Claude config
 
 ```bash
 cp ~/Github/claude-community/commands/* ~/.claude/commands/
 ```
 
-### Alternative: Symlink for easy updates
+### Optional: Symlink for easy updates
 
-If you want to get updates automatically when this repo changes:
+If you want to get updates automatically when this repo changes, use a symlink instead of copying:
 
 ```bash
 ln -s ~/Github/claude-community/commands/* ~/.claude/commands/
 ```
+
+### Step 7: Start Claude Code
+
+```bash
+claude
+```
+
+You'll be prompted to log in with your Claude account on first run. Once logged in, you can use any of the slash commands below!
 
 ## Usage
 
@@ -117,6 +114,18 @@ Invoke any command by typing it in Claude Code:
 ```
 /spotify-organizer-bot
 ```
+
+## Available Commands
+
+| Command | Description |
+|---------|-------------|
+| `/contract-analyzer-bot` | Analyze contracts for dangerous, invasive, and unreasonable clauses |
+| `/discount-finder` | Find coupons, promo codes, cashback, and savings strategies |
+| `/hike-finder` | Find hikes with optimal conditions based on weather and preferences |
+| `/pack-trip` | Generate a packing list based on destination, weather, and activities |
+| `/product-finder` | Find best products by price, quality, reviews, and BBB ratings |
+| `/research` | Evaluate research quality by sample size, controls, peer review, and citations |
+| `/spotify-organizer-bot` | Organize Spotify library into mood-based and smart playlists |
 
 ## Contributing
 
