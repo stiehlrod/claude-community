@@ -1,6 +1,10 @@
 # Claude Community
 
-A collection of general-purpose Claude Code slash commands useful for any developer.
+A collection of helpful Claude Code slash commands for everyday tasks. No coding experience required.
+
+## What is this?
+
+[Claude Code](https://claude.com/claude-code) is an AI assistant that runs in your terminal. Slash commands are shortcuts that give Claude specific instructions for common tasks—like having a personal assistant who already knows exactly what you need.
 
 ## Available Commands
 
@@ -12,20 +16,41 @@ A collection of general-purpose Claude Code slash commands useful for any develo
 
 ## Installation
 
-### Copy commands to your Claude Code config
+### New to Terminal? Start here
+
+Terminal is an app on your Mac that lets you type commands.
+
+1. Press **Command + Space** to open Spotlight
+2. Type **Terminal**
+3. Press **Enter**
+
+A window will open. This is your terminal—you'll paste the commands below here.
+
+### Step 1: Create a folder for the download
 
 ```bash
-# Clone the repo
-git clone https://github.com/stiehlrod/claude-community.git
-
-# Copy commands to your Claude config
-cp claude-community/commands/* ~/.claude/commands/
+mkdir -p ~/Github
+cd ~/Github
 ```
 
-### Or symlink for easy updates
+### Step 2: Download these commands
 
 ```bash
-ln -s /path/to/claude-community/commands/* ~/.claude/commands/
+git clone https://github.com/stiehlrod/claude-community.git
+```
+
+### Step 3: Copy commands to your Claude config
+
+```bash
+cp ~/Github/claude-community/commands/* ~/.claude/commands/
+```
+
+### Alternative: Symlink for easy updates
+
+If you want to get updates automatically when this repo changes:
+
+```bash
+ln -s ~/Github/claude-community/commands/* ~/.claude/commands/
 ```
 
 ## Usage
