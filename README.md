@@ -104,6 +104,10 @@ Invoke any command by typing it in Claude Code:
 ```
 
 ```
+/meal-planner -p 4 -d vegetarian --pantry rice,beans
+```
+
+```
 /pack-trip Hawaii 7 days beach and hiking
 ```
 
@@ -127,6 +131,7 @@ Invoke any command by typing it in Claude Code:
 | `/contract-analyzer` | Analyze contracts for dangerous, invasive, and unreasonable clauses |
 | `/discount-finder` | Find coupons, promo codes, cashback, and savings strategies |
 | `/hike-finder` | Find hikes with optimal conditions based on weather and preferences |
+| `/meal-planner` | Weekly meal plans with smart shopping lists, budget options, and dietary preferences |
 | `/pack-trip` | Generate a packing list based on destination, weather, and activities |
 | `/product-finder` | Find best products by price, quality, reviews, and BBB ratings |
 | `/research` | Evaluate research quality by sample size, controls, peer review, and citations |
