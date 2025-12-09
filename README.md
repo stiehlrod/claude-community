@@ -96,6 +96,10 @@ Invoke any command by typing it in Claude Code:
 ```
 
 ```
+/bike-route -t gravel -l Boulder, CO
+```
+
+```
 /hike-finder Denver, CO
 ```
 
@@ -119,6 +123,7 @@ Invoke any command by typing it in Claude Code:
 
 | Command | Description |
 |---------|-------------|
+| `/bike-route` | Find bike routes based on terrain type, location, and weather conditions |
 | `/contract-analyzer-bot` | Analyze contracts for dangerous, invasive, and unreasonable clauses |
 | `/discount-finder` | Find coupons, promo codes, cashback, and savings strategies |
 | `/hike-finder` | Find hikes with optimal conditions based on weather and preferences |
