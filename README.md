@@ -92,7 +92,7 @@ Invoke any command by typing it in Claude Code:
 ```
 
 ```
-/contract-analyzer-bot ~/Documents/lease.pdf
+/contract-analyzer ~/Documents/lease.pdf
 ```
 
 ```
@@ -116,7 +116,7 @@ Invoke any command by typing it in Claude Code:
 ```
 
 ```
-/spotify-organizer-bot
+/spotify-organizer
 ```
 
 ## Available Commands
@@ -124,13 +124,13 @@ Invoke any command by typing it in Claude Code:
 | Command | Description |
 |---------|-------------|
 | `/bike-route` | Find bike routes based on terrain type, location, and weather conditions |
-| `/contract-analyzer-bot` | Analyze contracts for dangerous, invasive, and unreasonable clauses |
+| `/contract-analyzer` | Analyze contracts for dangerous, invasive, and unreasonable clauses |
 | `/discount-finder` | Find coupons, promo codes, cashback, and savings strategies |
 | `/hike-finder` | Find hikes with optimal conditions based on weather and preferences |
 | `/pack-trip` | Generate a packing list based on destination, weather, and activities |
 | `/product-finder` | Find best products by price, quality, reviews, and BBB ratings |
 | `/research` | Evaluate research quality by sample size, controls, peer review, and citations |
-| `/spotify-organizer-bot` | Organize Spotify library into mood-based and smart playlists |
+| `/spotify-organizer` | Organize Spotify library into mood-based and smart playlists |
 
 ## Contributing
 
