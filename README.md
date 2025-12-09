@@ -145,6 +145,10 @@ Contributions welcome! When adding commands:
 
 - [claude-commands](https://github.com/oddballteam/claude-commands) - Professional commands for engineering teams
 
+## Support This Project
+
+If these commands make your life easier, consider supporting continued development by donating to [@Jennica-Stiehl](https://account.venmo.com/u/Jennica-Stiehl).
+
 ## License
 
 MIT License - Feel free to use, modify, and distribute.
