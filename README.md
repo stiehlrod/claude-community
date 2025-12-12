@@ -112,7 +112,7 @@ Invoke any command by typing it in Claude Code:
 ```
 
 ```
-/product-finder standing desk under $500
+/product-finder standing desk --price --quality --sustainable
 ```
 
 ```
@@ -133,7 +133,7 @@ Invoke any command by typing it in Claude Code:
 | `/hike-finder` | Find hikes with optimal conditions based on weather and preferences |
 | `/meal-planner` | Weekly meal plans with smart shopping lists, budget options, and dietary preferences |
 | `/pack-trip` | Generate a packing list based on destination, weather, and activities |
-| `/product-finder` | Find best products by price, quality, reviews, and BBB ratings |
+| `/product-finder` | Find best products by price, quality, reviews, BBB ratings, sustainability, and ethical practices |
 | `/research` | Evaluate research quality by sample size, controls, peer review, and citations |
 | `/spotify-organizer` | Organize Spotify library into mood-based and smart playlists |
 
