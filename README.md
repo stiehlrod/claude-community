@@ -93,6 +93,14 @@ Invoke any command by typing it in Claude Code:
 ```
 
 ```
+/fodmap Olive Garden
+```
+
+```
+/fodmap find restaurants near downtown Denver
+```
+
+```
 /contract-analyzer ~/Documents/lease.pdf
 ```
 
@@ -131,6 +139,7 @@ Invoke any command by typing it in Claude Code:
 | `/bike-route` | Find bike routes based on terrain type, location, and weather conditions |
 | `/contract-analyzer` | Analyze contracts for dangerous, invasive, and unreasonable clauses |
 | `/discount-finder` | Find coupons, promo codes, cashback, and savings strategies |
+| `/fodmap` | FODMAP diet navigator - restaurant menus, safe food choices, and social eating guidance |
 | `/hike-finder` | Find hikes with optimal conditions based on weather and preferences |
 | `/meal-planner` | Weekly meal plans with smart shopping lists, budget options, and dietary preferences |
 | `/pack-trip` | Generate a packing list based on destination, weather, and activities |
