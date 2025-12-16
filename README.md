@@ -51,7 +51,7 @@ npm install -g @anthropic-ai/claude-code
 
 Wait for it to finish (may take a minute).
 
-### Step 5: Download these commands
+### Step 5: Download and use these commands
 
 Create a folder and download this repository:
 
@@ -59,29 +59,30 @@ Create a folder and download this repository:
 mkdir -p ~/Github
 cd ~/Github
 git clone https://github.com/stiehlrod/claude-community.git
+cd claude-community
 ```
 
-### Step 6: Copy commands to your Claude config
-
-```bash
-cp ~/Github/claude-community/commands/* ~/.claude/commands/
-```
-
-### Optional: Symlink for easy updates
-
-If you want to get updates automatically when this repo changes, use a symlink instead of copying:
-
-```bash
-ln -s ~/Github/claude-community/commands/* ~/.claude/commands/
-```
-
-### Step 7: Start Claude Code
+### Step 6: Start Claude Code
 
 ```bash
 claude
 ```
 
 You'll be prompted to log in with your Claude account on first run. Once logged in, you can use any of the slash commands below!
+
+### Optional: Make commands available globally
+
+The commands above only work when you run `claude` from within the `claude-community` folder. To make them available everywhere:
+
+```bash
+cp ~/Github/claude-community/.claude/commands/* ~/.claude/commands/
+```
+
+Or use symlinks to get updates automatically:
+
+```bash
+ln -s ~/Github/claude-community/.claude/commands/* ~/.claude/commands/
+```
 
 ## Usage
 
