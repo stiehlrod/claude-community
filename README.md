@@ -144,6 +144,10 @@ Invoke any command by typing it in Claude Code:
 /spotify-organizer
 ```
 
+```
+/spotify-organizer rotate --mood chill
+```
+
 ## Available Commands
 
 | Command | Description |
@@ -158,7 +162,7 @@ Invoke any command by typing it in Claude Code:
 | `/pack-trip` | Generate a packing list based on destination, weather, and activities |
 | `/product-finder` | Find best products by price, quality, reviews, BBB ratings, sustainability, and ethical practices |
 | `/research` | Evaluate research quality by sample size, controls, peer review, and citations |
-| `/spotify-organizer` | Organize Spotify library into mood-based and smart playlists |
+| `/spotify-organizer` | Organize Spotify library into mood-based playlists with fresh bi-weekly rotations |
 
 ## Contributing
 

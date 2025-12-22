@@ -19,7 +19,20 @@ Automatically organizes your Spotify library into mood-based and smart playlists
 - **Discover Weekly Archive** - Saves Discover Weekly before it refreshes
 - **Top Tracks** - Your most played songs
 
-### 3. Cross-Playlist Duplicate Detection
+### 3. Fresh Rotation Playlists (NEW)
+- **~15 songs per playlist** - manageable listening sessions
+- **Bi-weekly refresh** - new songs every 2 weeks
+- **No repeats** - tracks play history, never repeats songs from previous rotations
+- **Draws from your library** - pulls from your larger mood playlists
+- **Rolling history** - songs become eligible again after ~3 months (6 rotations)
+
+Example rotation cycle:
+- Rotation 1 (Jan 1-14): Songs 1-15
+- Rotation 2 (Jan 15-28): Songs 16-30 (songs 1-15 excluded)
+- Rotation 3 (Jan 29-Feb 11): Songs 31-45 (songs 1-30 excluded)
+- ...and so on
+
+### 4. Cross-Playlist Duplicate Detection
 - Find songs that exist in multiple playlists
 - Option to automatically remove duplicates (keeps first occurrence)
 - Can target specific playlists or scan all playlists
@@ -56,6 +69,24 @@ The bot will:
 4. Create/update smart playlists
 5. Report duplicate tracks
 
+### Fresh Rotation Commands
+```bash
+# Create/refresh rotation playlists (run every 2 weeks)
+./bot.py rotate
+
+# Create rotation for specific mood only
+./bot.py rotate --mood chill
+
+# Force new rotation (even if 2 weeks haven't passed)
+./bot.py rotate --force
+
+# View rotation history
+./bot.py rotate --history
+
+# Reset history (make all songs eligible again)
+./bot.py rotate --reset
+```
+
 ### Find Cross-Playlist Duplicates
 ```bash
 # Find duplicates across ALL playlists
@@ -86,6 +117,23 @@ playlists:
   chill:
     name: "😌 Chill Vibes"
     genres: ["ambient", "lo-fi", "jazz", "acoustic", "indie"]
+
+# Fresh Rotation Settings
+rotation:
+  enabled: true
+  songs_per_playlist: 15        # Songs per rotation playlist
+  refresh_days: 14              # Days between rotations
+  history_rotations: 6          # How many rotations before songs can repeat (~3 months)
+
+  # Which moods get rotation playlists
+  moods:
+    - energetic
+    - chill
+    - happy
+
+  # Playlist naming
+  naming:
+    prefix: "🔄 Fresh"          # e.g., "🔄 Fresh Chill"
 ```
 
 ---
@@ -102,10 +150,17 @@ playlists:
 - Fallback to artist genres if track genre unavailable
 - Custom mapping of genres to moods
 
+### Rotation History Tracking
+- SQLite database stores song IDs and rotation dates
+- Each rotation tagged with date and mood
+- Query excludes songs from last N rotations
+- Automatic cleanup of old history
+
 ### Dependencies
 - `spotipy` - Spotify API client
 - `python-dotenv` - Environment configuration
 - `pyyaml` - Configuration management
+- `sqlite3` - Rotation history database
 
 ---
 
@@ -114,9 +169,11 @@ playlists:
 ```
 spotify-organizer/
 ├── organize.py          # Main organizer script
+├── rotate.py           # Fresh rotation logic
 ├── genre_moods.py      # Genre-to-mood mapping
 ├── config.yaml         # User configuration (gitignored)
 ├── config.example.yaml # Configuration template
+├── rotation_history.db # SQLite rotation tracking (gitignored)
 ├── requirements.txt    # Python dependencies
 └── README.md          # Documentation
 ```
@@ -138,6 +195,15 @@ The bot can be run:
 - **Manually** when you want to organize
 - **Weekly** via cron for automatic maintenance
 - **After adding new music** to keep playlists fresh
+
+### Suggested Schedule
+```bash
+# Full organization (monthly)
+0 9 1 * * cd /Users/jennicastiehl/bots/spotify-organizer && ./bot.py all
+
+# Fresh rotation refresh (every 2 weeks)
+0 9 1,15 * * cd /Users/jennicastiehl/bots/spotify-organizer && ./bot.py rotate
+```
 
 ---
 
