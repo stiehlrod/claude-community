@@ -19,6 +19,8 @@ Sign up for one of these plans at [claude.ai](https://claude.ai):
 - **Claude Team** ($25/user/month) - For teams
 - **Claude Enterprise** - For organizations
 
+**Want to try it first?** I have 3 free passes that give you 7 days of Claude Pro access. [Claim a free pass](https://claude.ai/referral/OuK8zcMZog) (requires credit card, cancel anytime).
+
 ### Step 2: Open Terminal
 
 Terminal is an app on your Mac that lets you type commands.
