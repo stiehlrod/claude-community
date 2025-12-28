@@ -64,7 +64,27 @@ git clone https://github.com/stiehlrod/claude-community.git
 cd claude-community
 ```
 
-### Step 6: Start Claude Code
+### Step 6: Install commands globally (Recommended)
+
+This step makes all commands available in every Claude Code conversation, no matter what folder you're in.
+
+First, create the commands folder if it doesn't exist:
+
+```bash
+mkdir -p ~/.claude/commands
+```
+
+Then install the commands:
+
+```bash
+cp ~/Github/claude-community/.claude/commands/* ~/.claude/commands/
+```
+
+**That's it!** The commands are now installed.
+
+### Step 7: Start Claude Code
+
+Open Terminal and type:
 
 ```bash
 claude
@@ -72,19 +92,44 @@ claude
 
 You'll be prompted to log in with your Claude account on first run. Once logged in, you can use any of the slash commands below!
 
-### Optional: Make commands available globally
+---
 
-The commands above only work when you run `claude` from within the `claude-community` folder. To make them available everywhere:
+## Troubleshooting
+
+### "Command not found" when I type a slash command
+
+This usually means the commands aren't installed globally. Run these commands in Terminal:
 
 ```bash
+mkdir -p ~/.claude/commands
 cp ~/Github/claude-community/.claude/commands/* ~/.claude/commands/
 ```
 
-Or use symlinks to get updates automatically:
+Then restart Claude Code (type `exit` and then `claude` again).
+
+### Getting updates when new commands are added
+
+When new commands are added to this repository, you'll need to update your local copy:
 
 ```bash
-ln -s ~/Github/claude-community/.claude/commands/* ~/.claude/commands/
+cd ~/Github/claude-community
+git pull
+cp .claude/commands/* ~/.claude/commands/
 ```
+
+### Alternative: Auto-updating commands (Advanced)
+
+If you're comfortable with Terminal, you can use "symlinks" instead of copying. This means your commands automatically update whenever you run `git pull`:
+
+```bash
+# Remove copied files first (if any)
+rm -f ~/.claude/commands/*.md
+
+# Create symlinks
+ln -sf ~/Github/claude-community/.claude/commands/* ~/.claude/commands/
+```
+
+Now when you `git pull` new commands, they're instantly available.
 
 ## Usage
 
