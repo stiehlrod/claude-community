@@ -158,10 +158,19 @@ Invoke any command by typing it in Claude Code:
 /conversation-starters level 3
 ```
 
+```
+/backcountry-check Berthoud Pass
+```
+
+```
+/backcountry-check Vail tomorrow
+```
+
 ## Available Commands
 
 | Command | Description |
 |---------|-------------|
+| `/backcountry-check` | Check backcountry skiing conditions - avalanche danger, weather, and CAIC forecasts for Colorado |
 | `/bike-route` | Find bike routes based on terrain type, location, and weather conditions |
 | `/contract-analyzer` | Analyze contracts for dangerous, invasive, and unreasonable clauses |
 | `/conversation-starters` | Get conversation questions organized by depth level - from icebreakers to soul-searching |
