@@ -150,12 +150,21 @@ Invoke any command by typing it in Claude Code:
 /spotify-organizer rotate --mood chill
 ```
 
+```
+/conversation-starters first date
+```
+
+```
+/conversation-starters level 3
+```
+
 ## Available Commands
 
 | Command | Description |
 |---------|-------------|
 | `/bike-route` | Find bike routes based on terrain type, location, and weather conditions |
 | `/contract-analyzer` | Analyze contracts for dangerous, invasive, and unreasonable clauses |
+| `/conversation-starters` | Get conversation questions organized by depth level - from icebreakers to soul-searching |
 | `/discount-finder` | Find coupons, promo codes, cashback, and savings strategies |
 | `/fodmap` | FODMAP diet navigator - restaurant menus, safe food choices, and social eating guidance |
 | `/dinner-party` | Track guest allergies, intolerances, and diets - get safe recipes and substitutions |
