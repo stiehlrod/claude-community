@@ -16,6 +16,8 @@ Both require a paid subscription (Pro, Max, Team, or Enterprise).
 
 ## Getting Started
 
+---
+
 ### Option A: Cowork (Recommended -- no terminal required)
 
 Cowork is built into the [Claude Desktop app](https://claude.com/download). You chat with Claude and point it at a folder on your computer -- it reads, creates, and modifies files for you.
@@ -56,6 +58,8 @@ In Cowork, type `/` to see all available commands, or click `+` > **Slash comman
 
 For more details, use the `/cowork-guide` command or visit the [Claude Help Center](https://support.claude.com/en/articles/13345190-get-started-with-cowork).
 
+---
+
 ### Option B: Claude Code (Terminal)
 
 Claude Code runs in your terminal and supports the same slash commands. Choose this if you're comfortable with the command line.
@@ -64,14 +68,16 @@ Claude Code runs in your terminal and supports the same slash commands. Choose t
 
 Follow these steps in order to get set up.
 
-### Step 1: Get a Claude subscription
+---
+
+#### Step 1: Get a Claude subscription
 
 Sign up for one of these plans at [claude.ai](https://claude.ai):
 - **Claude Pro** ($20/month) - For individual use
 - **Claude Team** ($25/user/month) - For teams
 - **Claude Enterprise** - For organizations
 
-### Step 2: Open Terminal
+#### Step 2: Open Terminal
 
 Terminal is an app on your Mac that lets you type commands.
 
@@ -81,7 +87,7 @@ Terminal is an app on your Mac that lets you type commands.
 
 A window will open. This is your terminal—you'll paste the commands below here.
 
-### Step 3: Install Node.js
+#### Step 3: Install Node.js
 
 Node.js is required to run Claude Code. Download and install it from [nodejs.org](https://nodejs.org/)—choose the **LTS** (Long Term Support) version.
 
@@ -93,7 +99,7 @@ node --version
 
 You should see a version number like `v20.x.x`. If you see an error, restart Terminal and try again.
 
-### Step 4: Install Claude Code
+#### Step 4: Install Claude Code
 
 Now install Claude Code by typing this in Terminal:
 
@@ -103,7 +109,7 @@ npm install -g @anthropic-ai/claude-code
 
 Wait for it to finish (may take a minute).
 
-### Step 5: Download and use these commands
+#### Step 5: Download and use these commands
 
 Create a folder and download this repository:
 
@@ -114,7 +120,7 @@ git clone https://github.com/stiehlrod/claude-community.git
 cd claude-community
 ```
 
-### Step 6: Install commands globally (Recommended)
+#### Step 6: Install commands globally (Recommended)
 
 This step makes all commands available in every Claude Code conversation, no matter what folder you're in.
 
@@ -132,7 +138,7 @@ cp ~/Github/claude-community/.claude/commands/* ~/.claude/commands/
 
 **That's it!** The commands are now installed.
 
-### Step 7: Start Claude Code
+#### Step 7: Start Claude Code
 
 Open Terminal and type:
 
