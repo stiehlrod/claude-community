@@ -6,7 +6,34 @@ A collection of helpful Claude Code slash commands for everyday tasks. No coding
 
 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) is an AI assistant that runs in your terminal. Slash commands are shortcuts that give Claude specific instructions for common tasks—like having a personal assistant who already knows exactly what you need.
 
-## Getting Started
+## Two Ways to Use Claude
+
+This repo is built for Claude Code (terminal-based), but if you're not comfortable with the terminal, **Cowork** is the easier starting point.
+
+### Option A: Cowork (No terminal required)
+
+Cowork is built into the Claude Desktop app. You chat with Claude and point it at a folder on your computer -- it reads, creates, and modifies files for you. No coding, no terminal.
+
+1. **Get a paid subscription** at [claude.ai](https://claude.ai) (Pro, Max, Team, or Enterprise)
+2. **Download Claude Desktop** from [claude.com/download](https://claude.com/download) (macOS or Windows)
+3. **Open Claude Desktop** and click the **Cowork** tab at the top (next to Chat)
+4. **Click "Work in a Folder"** at the bottom and select a folder on your computer
+5. **Grant permissions** when prompted (read, edit, delete)
+6. **Describe your task** in plain language -- Claude shows its plan before executing
+
+**Tips:**
+- Keep the app open while Claude works -- closing it stops the task
+- Start with a test folder, not your main files
+- Be outcome-oriented: "Summarize this spreadsheet by category" works better than step-by-step instructions
+- Type `/schedule` to set up recurring tasks
+
+**Dispatch (Pro/Max):** Assign tasks from your phone and Claude works on your desktop while you're away.
+
+For the full guide, see the `/cowork-guide` command or the [Claude Help Center](https://support.claude.com/en/articles/13345190-get-started-with-cowork).
+
+### Option B: Claude Code (Terminal -- for slash commands)
+
+Claude Code runs in your terminal and supports slash commands -- shortcuts that give Claude specific instructions for common tasks. The commands in this repo require Claude Code.
 
 **Note: Claude Code requires a paid subscription.** It does not work with the free tier.
 
@@ -219,6 +246,7 @@ Invoke any command by typing it in Claude Code:
 | `/bike-route` | Find bike routes based on terrain type, location, and weather conditions |
 | `/contract-analyzer` | Analyze contracts for dangerous, invasive, and unreasonable clauses |
 | `/conversation-starters` | Get conversation questions organized by depth level - from icebreakers to soul-searching |
+| `/cowork-guide` | Step-by-step guide for setting up and using Claude Cowork |
 | `/discount-finder` | Find coupons, promo codes, cashback, and savings strategies |
 | `/fodmap` | FODMAP diet navigator - restaurant menus, safe food choices, and social eating guidance |
 | `/dinner-party` | Track guest allergies, intolerances, and diets - get safe recipes and substitutions |
