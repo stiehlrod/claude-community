@@ -20,11 +20,27 @@ Get it from [claude.com/download](https://claude.com/download) (macOS or Windows
 
 Open Terminal (Mac: Command + Space, type **Terminal**) or Command Prompt (Windows: Windows key, type **Command Prompt**). Paste this and press Enter:
 
+**Option A: Quick install (copy commands)**
+
 ```bash
 mkdir -p ~/.claude/commands && cd /tmp && curl -L https://github.com/stiehlrod/claude-community/archive/main.tar.gz | tar xz && cp claude-community-main/.claude/commands/*.md ~/.claude/commands/ && rm -rf claude-community-main && echo "Done! Commands installed."
 ```
 
 You should see `Done! Commands installed.` -- close Terminal and you're done with it.
+
+**Option B: Clone the repo (easier to update)**
+
+```bash
+git clone https://github.com/stiehlrod/claude-community.git ~/claude-community
+```
+
+Then start Claude Code or Cowork with the `--add-dir` flag to load the skills automatically:
+
+```bash
+claude --add-dir ~/claude-community
+```
+
+To update later, just `cd ~/claude-community && git pull`.
 
 ### 3. Start using Cowork
 
@@ -51,6 +67,7 @@ For more on Cowork, use `/cowork-guide` or visit the [Claude Help Center](https:
 | `/bike-route` | Find bike routes based on terrain type, location, and weather conditions |
 | `/contract-analyzer` | Analyze contracts for dangerous, invasive, and unreasonable clauses |
 | `/conversation-starters` | Get conversation questions organized by depth level |
+| `/convert-to-notes` | Convert PowerPoint slides to markdown and print-ready PDF |
 | `/cowork-guide` | Step-by-step guide for setting up and using Claude Cowork |
 | `/dinner-party` | Track guest allergies, intolerances, and diets - get safe recipes |
 | `/discount-finder` | Find coupons, promo codes, cashback, and savings strategies |
@@ -61,6 +78,7 @@ For more on Cowork, use `/cowork-guide` or visit the [Claude Help Center](https:
 | `/product-finder` | Find best products by price, quality, reviews, and sustainability |
 | `/research` | Evaluate research quality by sample size, controls, peer review, and citations |
 | `/spotify-organizer` | Organize Spotify library into mood-based playlists |
+| `/writing-editor` | Check spelling, grammar, tone, and punctuation while preserving voice |
 
 ## Examples
 
@@ -75,11 +93,15 @@ For more on Cowork, use `/cowork-guide` or visit the [Claude Help Center](https:
 /backcountry-check Berthoud Pass
 /product-finder standing desk --price --quality --sustainable
 /conversation-starters first date
+/convert-to-notes ~/Downloads/lecture-slides.pptx
+/writing-editor ~/Documents/cover-letter.md
 ```
 
 ## Updating Commands
 
-Re-run the install command from Step 2 to get the latest versions.
+**Option A users:** Re-run the install command from Step 2 to get the latest versions.
+
+**Option B users:** `cd ~/claude-community && git pull`
 
 ## Troubleshooting
 
