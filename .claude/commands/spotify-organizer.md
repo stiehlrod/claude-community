@@ -1,3 +1,7 @@
+---
+model: sonnet
+---
+
 # Spotify Organizer Bot
 
 ## Purpose

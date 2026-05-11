@@ -1,5 +1,6 @@
 ---
 description: Shopping discount finder - finds coupons, promo codes, cashback, and savings strategies for online stores
+model: sonnet
 ---
 
 # Discount Finder Bot
