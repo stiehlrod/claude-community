@@ -1,5 +1,6 @@
 ---
 description: Shopping research bot - finds best products by price, quality, reviews, BBB ratings, sustainability, and ethical practices
+model: sonnet
 ---
 
 # Product Finder Bot

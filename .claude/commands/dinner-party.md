@@ -1,5 +1,6 @@
 ---
 description: Food allergy and preference tracker - manage guest dietary restrictions and get safe recipe suggestions
+model: sonnet
 ---
 
 # Dinner Party Bot

@@ -1,5 +1,6 @@
 ---
 description: Research quality evaluator - finds and analyzes studies by participant count, controls, peer review, age, and citations
+model: sonnet
 ---
 
 # Research Assistant

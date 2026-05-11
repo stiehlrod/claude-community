@@ -1,5 +1,6 @@
 ---
 description: Check backcountry skiing conditions - avalanche danger, weather, and CAIC forecasts for Colorado
+model: sonnet
 ---
 
 # Backcountry Safety Check

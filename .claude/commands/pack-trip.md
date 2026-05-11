@@ -1,5 +1,6 @@
 ---
 description: Generate a packing list based on destination, weather, and activities
+model: sonnet
 ---
 
 # Trip Packing Assistant

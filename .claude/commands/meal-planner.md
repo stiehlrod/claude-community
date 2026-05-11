@@ -1,5 +1,6 @@
 ---
 description: Weekly meal planner with smart shopping lists, budget options, and dietary preferences
+model: sonnet
 ---
 
 # Meal Planner

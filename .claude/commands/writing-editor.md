@@ -1,5 +1,6 @@
 ---
 description: Writing editor - checks spelling, grammar, tone, and punctuation while preserving voice
+model: sonnet
 ---
 
 # Writing Editor Bot
