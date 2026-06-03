@@ -1,6 +1,6 @@
 ---
 description: Get conversation questions organized by depth level - from icebreakers to soul-searching
-model: sonnet
+model: haiku
 ---
 
 # Conversation Starters

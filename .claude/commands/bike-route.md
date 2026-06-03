@@ -1,6 +1,6 @@
 ---
 description: Find bike routes based on terrain type, location, and weather conditions
-model: sonnet
+model: haiku
 ---
 
 # Bike Route Finder

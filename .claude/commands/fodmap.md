@@ -1,6 +1,6 @@
 ---
 description: FODMAP diet navigator - restaurant menus, safe food choices, and social eating guidance
-model: sonnet
+model: haiku
 ---
 
 # FODMAP Navigator

@@ -1,6 +1,6 @@
 ---
 description: Convert PowerPoint slides to markdown and print-ready PDF with proper formatting
-model: sonnet
+model: haiku
 ---
 
 # PowerPoint to Markdown/PDF Converter

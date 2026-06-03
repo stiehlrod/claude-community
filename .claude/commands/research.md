@@ -42,7 +42,20 @@ Evaluate research quality using these criteria (in priority order):
 - Default to `--search` if no URL provided
 - Default to general research mode if no domain flag
 
-### Step 2: Gather Research
+### Step 2: Search Local Cache First
+
+Before any web requests, search the local research cache using `mcp__research-cache__search_documents`.
+
+- Run 1–3 searches with different keyword phrasings for the topic
+- For each promising result, fetch full content with `mcp__research-cache__get_document`
+- Assess coverage: does the cache already have sufficient high-quality sources on this topic?
+- **If cache covers the topic well:** use cached content as primary source, skip or minimize web search
+- **If cache has partial coverage:** use cached content, then supplement with targeted web searches for gaps only
+- **If cache has nothing relevant:** proceed to full web search
+
+Always note which sources came from cache vs. web in the final output.
+
+### Step 3: Gather Research (Web — only for gaps)
 
 **If searching:**
 - Use WebSearch to find studies on PubMed, Google Scholar, research databases
@@ -54,7 +67,7 @@ Evaluate research quality using these criteria (in priority order):
 - Use WebFetch to retrieve study content
 - Extract methodology, sample size, controls, publication info
 
-### Step 3: Evaluate Each Study
+### Step 4: Evaluate Each Study
 
 Score each study on:
 
@@ -67,7 +80,7 @@ Score each study on:
 | Citations | Medium | Well-cited sources, study itself has citations |
 | Replication | High | Has the finding been replicated? |
 
-### Step 4: Generate Summary Report
+### Step 5: Generate Summary Report
 
 ## Output Format
 
@@ -141,13 +154,15 @@ Score each study on:
 
 ## What This Bot Does
 
-- ✅ Searches for research on any topic
+- ✅ Checks local research cache first before any web requests
+- ✅ Searches for research on any topic (web, for gaps only)
 - ✅ Analyzes provided study links
 - ✅ Prioritizes large, well-controlled studies
 - ✅ Checks for peer review status
 - ✅ Prefers older studies with replication time
 - ✅ Provides full citations with sources
 - ✅ Gives evidence strength ratings
+- ✅ Labels sources as [cache] or [web]
 
 ## What This Bot Does NOT Do
 

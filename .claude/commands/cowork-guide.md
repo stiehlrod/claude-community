@@ -1,6 +1,6 @@
 ---
 description: Step-by-step guide for setting up and using Claude Cowork
-model: sonnet
+model: haiku
 ---
 
 # Claude Cowork Setup & Usage Guide

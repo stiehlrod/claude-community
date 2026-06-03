@@ -1,6 +1,6 @@
 ---
 description: Find hikes with optimal conditions based on weather and preferences
-model: sonnet
+model: haiku
 ---
 
 # Hike Finder Bot

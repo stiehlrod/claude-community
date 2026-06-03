@@ -1,5 +1,6 @@
 ---
-model: sonnet
+description: Analyze contracts for dangerous, invasive, and unreasonable clauses
+model: haiku
 ---
 
 # Contract Analyzer Bot

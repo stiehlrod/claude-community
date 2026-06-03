@@ -1,5 +1,6 @@
 ---
-model: sonnet
+description: Organize Spotify library into mood-based and smart playlists using genre classification
+model: haiku
 ---
 
 # Spotify Organizer Bot
